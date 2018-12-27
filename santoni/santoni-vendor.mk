@@ -1064,8 +1064,8 @@ PRODUCT_PACKAGES += \
     WfdService \
     com.qualcomm.location \
     PowerOffAlarm \
-    qcrilmsgtunnel \
     ims \
+    qcrilmsgtunnel \
     imssettings \
     TimeService \
     colorservice \
