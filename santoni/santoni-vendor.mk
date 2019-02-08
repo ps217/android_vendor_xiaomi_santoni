@@ -24,6 +24,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/santoni/proprietary/vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb \
     vendor/xiaomi/santoni/proprietary/vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Headset_cal.acdb \
     vendor/xiaomi/santoni/proprietary/vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Speaker_cal.acdb \
+	vendor/xiaomi/santoni/proprietary/vendor/etc/diracmobile.config:$(TARGET_COPY_OUT_VENDOR)/etc/diracmobile.config \
     vendor/xiaomi/santoni/proprietary/vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb \
     vendor/xiaomi/santoni/proprietary/vendor/etc/acdbdata/QRD/QRD_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_General_cal.acdb \
     vendor/xiaomi/santoni/proprietary/vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Global_cal.acdb \
@@ -127,9 +128,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/santoni/proprietary/vendor/etc/qdcm_calib_data_hx8394F_HD720p_video_BOE.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_hx8394F_HD720p_video_BOE.xml \
     vendor/xiaomi/santoni/proprietary/vendor/etc/qdcm_calib_data_ili9881c_HD720p_video_Ebbg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_ili9881c_HD720p_video_Ebbg.xml \
     vendor/xiaomi/santoni/proprietary/vendor/etc/qdcm_calib_data_ili9881c_HD720p_video_EbbgDJN.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_ili9881c_HD720p_video_EbbgDJN.xml \
-    vendor/xiaomi/santoni/proprietary/vendor/lib/hw/consumerir.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/consumerir.default.so \
+	vendor/xiaomi/santoni/proprietary/vendor/lib/hw/consumerir.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/consumerir.default.so \
+	vendor/xiaomi/santoni/proprietary/lib/soundfx/libasphere.so:system/lib/soundfx/libasphere.so \
+    vendor/xiaomi/santoni/proprietary/lib/soundfx/libdirac.so:system/lib/soundfx/libdirac.so \
+	vendor/xiaomi/santoni/proprietary/lib/libDiracAPI_SHARED.so:system/system/lib/libDiracAPI_SHARED.so \
+	vendor/xiaomi/santoni/proprietary/vendor/lib/hw/consumerir.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/consumerir.default.so \
     vendor/xiaomi/santoni/proprietary/vendor/lib/hw/fingerprint.searchf.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/fingerprint.searchf.so \
     vendor/xiaomi/santoni/proprietary/vendor/lib/libcom_fingerprints_service.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcom_fingerprints_service.so \
+	vendor/xiaomi/santoni/proprietary/lib64/soundfx/libasphere.so:system/lib64/soundfx/libasphere.so \
     vendor/xiaomi/santoni/proprietary/vendor/lib64/hw/consumerir.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/consumerir.default.so \
     vendor/xiaomi/santoni/proprietary/vendor/lib64/hw/fingerprint.fpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.fpc.so \
     vendor/xiaomi/santoni/proprietary/vendor/lib64/hw/fingerprint.goodix.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix.so \
@@ -1725,6 +1731,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/santoni/proprietary/vendor/bin/wcnss_service:$(TARGET_COPY_OUT_VENDOR)/bin/wcnss_service \
     vendor/xiaomi/santoni/proprietary/vendor/bin/wifidisplayhalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wifidisplayhalservice \
     vendor/xiaomi/santoni/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
+	vendor/xiaomi/santoni/proprietary/vendor/etc/diracvdd.bin:$(TARGET_COPY_OUT_VENDOR)/etc/diracvdd.bin \
     vendor/xiaomi/santoni/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
     vendor/xiaomi/santoni/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
     vendor/xiaomi/santoni/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile2.xml \
@@ -2216,6 +2223,7 @@ PRODUCT_PACKAGES += \
     QtiTelephonyService \
     uceShimService \
     CNEService \
+	DiracAudioControlService \
     WfdService \
     com.qualcomm.location \
     ims \
